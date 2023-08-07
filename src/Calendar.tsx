@@ -36,7 +36,7 @@ const CalendarRow: React.FC<CalendarRowProps> = ({
                         new Date().getMonth() === currentMonth &&
                         new Date().getFullYear() === currentYear ? (
                         <td className="relative py-3 px-2 md:px-3  hover:text-blue-500 text-center text-gray-800">
-                            <span className="p-1 rounded-full border-green-400 border-2">
+                            <span className="p-1 rounded-full border-blue-400 border-2">
                                 {i + 1}
                             </span>
                         </td>
@@ -60,7 +60,7 @@ const CalendarRow: React.FC<CalendarRowProps> = ({
                         new Date().getMonth() === currentMonth &&
                         new Date().getFullYear() === currentYear ? (
                         <td className="relative py-3 px-2 md:px-3  hover:text-blue-500 text-center text-gray-800">
-                            <span className="p-1 rounded-full border-green-400 border-2">
+                            <span className="p-1 rounded-full border-blue-400 border-2">
                                 {i + (7 * row - firstDay)}
                             </span>
                         </td>
@@ -113,7 +113,7 @@ const Calendar: React.FC<CalendarProps> = () => {
                     </div>
                     <div className="flex space-x-4">
                         <button
-                            className="p-2 rounded bg-green-400 text-white"
+                            className="p-2 rounded bg-blue-400 text-white"
                             onClick={() => {
                                 if (prevMonth.current === 0) {
                                     setActiveYear(activeYear - 1);
@@ -136,7 +136,7 @@ const Calendar: React.FC<CalendarProps> = () => {
                             </svg>
                         </button>
                         <button
-                            className="p-2 rounded bg-green-400 text-white"
+                            className="p-2 rounded bg-blue-400 text-white"
                             onClick={() => {
                                 if (prevMonth.current === 11) {
                                     setActiveYear(activeYear + 1);
